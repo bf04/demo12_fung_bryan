@@ -1,0 +1,98 @@
+[debug] [2023-03-28T16:55:26.478Z] ----------------------------------------------------------------------
+[debug] [2023-03-28T16:55:26.480Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\BF\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-28T16:55:26.480Z] CLI Version:   11.25.1
+[debug] [2023-03-28T16:55:26.480Z] Platform:      win32
+[debug] [2023-03-28T16:55:26.480Z] Node Version:  v18.15.0
+[debug] [2023-03-28T16:55:26.481Z] Time:          Tue Mar 28 2023 09:55:26 GMT-0700 (Pacific Daylight Saving Time)
+[debug] [2023-03-28T16:55:26.481Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-28T16:55:26.524Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-28T16:55:26.525Z] > authorizing via signed-in user (pikzergamingacc@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\BF\Documents\comp1800\demo12\demo12_fung_bryan
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-28T16:55:54.816Z] Using project from CLI flag: demo911-53377
+[debug] [2023-03-28T16:55:54.817Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/demo911-53377 [none]
+[debug] [2023-03-28T16:55:55.035Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/demo911-53377 200
+[debug] [2023-03-28T16:55:55.035Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/demo911-53377 {"projectId":"demo911-53377","projectNumber":"890212814629","displayName":"demo911","name":"projects/demo911-53377","resources":{"hostingSite":"demo911-53377"},"state":"ACTIVE","etag":"1_f713cebf-0b60-4803-83aa-8fcda79b8be9"}
+[info] i  Using project demo911-53377 (demo911) 
+[info] 
+=== Firestore Setup
+[debug] [2023-03-28T16:55:55.044Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/demo911-53377/services/firestore.googleapis.com [none]
+[debug] [2023-03-28T16:55:55.044Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/demo911-53377/services/firestore.googleapis.com x-goog-quota-user=projects/demo911-53377
+[debug] [2023-03-28T16:55:55.245Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/demo911-53377/services/firestore.googleapis.com 200
+[debug] [2023-03-28T16:55:55.245Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/demo911-53377/services/firestore.googleapis.com [omitted]
+[debug] [2023-03-28T16:55:55.246Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/demo911-53377/databases/(default) [none]
+[debug] [2023-03-28T16:55:55.604Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/demo911-53377/databases/(default) 200
+[debug] [2023-03-28T16:55:55.604Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/demo911-53377/databases/(default) {"name":"projects/demo911-53377/databases/(default)","uid":"18ffdca7-b599-45bd-ab34-53eb6c8d5515","createTime":"2023-02-28T17:32:36.436098Z","updateTime":"2023-02-28T17:32:36.436098Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IJKamfaL//0CMLSgztGt7f0C"}
+[debug] [2023-03-28T16:55:55.604Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-03-28T16:55:55.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-28T16:55:55.605Z] > authorizing via signed-in user (pikzergamingacc@gmail.com)
+[debug] [2023-03-28T16:55:55.605Z] [iam] checking project demo911-53377 for permissions ["firebase.projects.get"]
+[debug] [2023-03-28T16:55:55.605Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/demo911-53377:testIamPermissions [none]
+[debug] [2023-03-28T16:55:55.605Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/demo911-53377:testIamPermissions x-goog-quota-user=projects/demo911-53377
+[debug] [2023-03-28T16:55:55.605Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/demo911-53377:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-28T16:55:55.695Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/demo911-53377:testIamPermissions 200
+[debug] [2023-03-28T16:55:55.695Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/demo911-53377:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-03-28T16:56:02.026Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/demo911-53377/releases pageSize=10&pageToken=
+[debug] [2023-03-28T16:56:02.378Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/demo911-53377/releases 200
+[debug] [2023-03-28T16:56:02.378Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/demo911-53377/releases {"releases":[{"name":"projects/demo911-53377/releases/cloud.firestore","rulesetName":"projects/demo911-53377/rulesets/21411118-d959-4e4d-8a53-4166f03b9591","createTime":"2023-02-28T17:35:02.978536Z","updateTime":"2023-03-28T16:55:34.365944Z"}]}
+[debug] [2023-03-28T16:56:02.378Z] Found ruleset: projects/demo911-53377/rulesets/21411118-d959-4e4d-8a53-4166f03b9591
+[debug] [2023-03-28T16:56:02.379Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/demo911-53377/rulesets/21411118-d959-4e4d-8a53-4166f03b9591 [none]
+[debug] [2023-03-28T16:56:02.503Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/demo911-53377/rulesets/21411118-d959-4e4d-8a53-4166f03b9591 200
+[debug] [2023-03-28T16:56:02.504Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/demo911-53377/rulesets/21411118-d959-4e4d-8a53-4166f03b9591 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-03-28T16:56:05.225Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/demo911-53377/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-03-28T16:56:05.227Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/demo911-53377/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-03-28T16:56:05.578Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/demo911-53377/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-03-28T16:56:05.578Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/demo911-53377/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-03-28T16:56:05.585Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/demo911-53377/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-03-28T16:56:05.586Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/demo911-53377/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/demo911-53377/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-03-28T16:56:21.269Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-03-28T16:56:21.333Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-03-28T16:56:21.334Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.18.0","browserURL":"https://www.gstatic.com/firebasejs/9.18.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.18.0/firebase.tgz"},"live":{"version":"9.18","browserURL":"https://www.gstatic.com/firebasejs/live/9.18/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.18/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.18.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.18.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.18.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.18.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.18.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.18.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.18.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.18.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.18.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.18.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.memory.js"}}
+[info] +  Wrote ./index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\BF\Documents\comp1800\demo12\demo12_fung_bryan 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=949837917&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
